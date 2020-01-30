@@ -1,0 +1,15 @@
+version: '2'
+## docker run
+## -p 80:8080
+## -v ~/my-codebase:/var/www/html
+## trafex/alpine-nginx-php7
+
+services:
+  lhci:
+    image: patrickhulce/lhci-server:latest
+    expose:
+      - "9001"
+    ports:
+      - "9001:9001"
+    volumes:
+      - ./data:/data
