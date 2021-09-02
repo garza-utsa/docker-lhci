@@ -1,16 +1,10 @@
-git clone --recursive -j8 git@bitbucket.org:utsaucm/docker-wordpress.git
 
-cd docker-wordpress
+create a copy of the lhci-test/config.json file, rename it accordingly
 
-mkdir mysql-data
+create a new project against the lhci server using `lhci wizard` via the command line
 
-git clone git@bitbucket.org:utsaucm/utsa-default-wordpress.git
+use https://github.com/garza-utsa/lhci-test as the repository url
 
-cd utsa-default-wordpress
+update the json config file with the generated token
 
-git clone git@bitbucket.org:utsaucm/utsa-wp-content.git wp-content
-
-docker-compose up
-
-#finish install at localhost:8000/wp-admin/install.php
-http://localhost:8000/wp-admin/install.php
+update .sh auto run and add the new config
