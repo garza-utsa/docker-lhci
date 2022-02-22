@@ -13,3 +13,4 @@ default-wordpress/*
 default-uploads
 default-uploads*
 data
+node_modules

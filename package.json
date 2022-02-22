@@ -1,0 +1,14 @@
+{
+  "name": "docker-lhci",
+  "version": "1.0.0",
+  "description": "create a copy of the lhci-test/config.json file, rename it accordingly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@lhci/cli": "^0.9.0"
+  }
+}
